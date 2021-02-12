@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <imports>
+        <import location="file:/C:/Users/thoma/Documents/Studenten/MASTER/03%20Java%20ML%20UIMA/exercises/exercise-09/src/main/resources/ex09types.xml"/>
+    </imports>
+</typeSystemDescription>

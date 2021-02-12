@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>Exercise 09</name>
+  <description />
+  <version>1</version>
+  <vendor>Nils Reiter</vendor>
+  <types>
+		<!-- defining the types in this file -->
+		<!-- Token -->
+		<typeDescription>
+			<name>de.ukoeln.idh.teaching.jml.ex09.types.Token</name>
+			<description />
+			<supertypeName>uima.tcas.Annotation</supertypeName>
+			<features>
+				<featureDescription>
+					<name>id</name>
+					<description />
+					<rangeTypeName>uima.cas.Integer</rangeTypeName>
+				</featureDescription>
+			</features>
+		</typeDescription>
+		
+		<!-- Sentence -->
+		<typeDescription>
+			<name>de.ukoeln.idh.teaching.jml.ex09.types.Sentence</name>
+			<description />
+			<supertypeName>uima.tcas.Annotation</supertypeName>
+			<features>
+				<featureDescription>
+					<name>id</name>
+					<description />
+					<rangeTypeName>uima.cas.Integer</rangeTypeName>
+				</featureDescription>
+			</features>
+		</typeDescription>
+		
+		<!-- Named Entity --> 
+		<typeDescription>
+			<name>de.ukoeln.idh.teaching.jml.ex09.types.NamedEntity</name>
+			<description />
+			<supertypeName>uima.tcas.Annotation</supertypeName>
+			<features>
+				<featureDescription>
+					<name>NEClass</name>
+					<description>to distinguish between person, organization etc.</description>
+					<rangeTypeName>uima.cas.String</rangeTypeName>
+				</featureDescription>
+
+				<featureDescription>
+					<name>confidence</name>
+					<description/>
+					<rangeTypeName>uima.cas.Long</rangeTypeName>
+				</featureDescription>
+
+				<featureDescription>
+					<name>source</name>
+					<description/>
+					<rangeTypeName>uima.cas.String</rangeTypeName>
+				</featureDescription>
+			</features>
+		</typeDescription>
+		
+  </types>
+</typeSystemDescription>
